@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    background-image: url(courty.jpg);
+    background-size: cover;
+}
+
+.card-container {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    background-color: #177C87;
+    color: #eeeeee;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.increment-button-section {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.increment-button {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-size: 28px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.display {
+    width: 160px;
+    height: 125px;
+    background-color: #000;
+    color: #f94f6c;
+    border-radius: 5px;
+    border: 4px solid #ccc;
+    font-size: 90px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+.new-game-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-game-btn {
+    height: 35px;
+    width: 120px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.new-game-btn:hover {
+    background-color: #f94f6c;
+    color: #fff;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: row; /* Keep home and guest side by side */
+        gap: 20px; /* Reduce the gap between home and guest sections */
+        padding: 10px;
+    }
+
+    .display {
+        width: 140px; /* Adjust size of display */
+        height: 100px;
+        font-size: 70px; /* Adjust font size */
+    }
+
+    .increment-button {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .new-game-btn {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+/* For smaller mobile screens like iPhones */
+@media only screen and (max-width: 480px) {
+    .card-container {
+        flex-direction: row; /* Keep home and guest side by side */
+        gap: 10px; /* Reduce gap even more for smaller screens */
+        padding: 5px;
+    }
+
+    .display {
+        width: 120px;
+        height: 90px;
+        font-size: 60px;
+    }
+
+    .increment-button {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .new-game-btn {
+        width: 90px;
+        font-size: 12px;
+    }
+}
+
