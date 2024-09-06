@@ -48,6 +48,12 @@ body {
     font-family: 'Cursed Timer ULiL', sans-serif;
 }
 
+
+.increment-button:hover {
+    background-color: #f94f6c; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
 .display {
     width: 160px;
     height: 125px;
