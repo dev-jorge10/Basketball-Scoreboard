@@ -17,6 +17,8 @@ body {
     background-size: cover;
 }
 
+
+
 .card-container {
     display: flex;
     gap: 50px;
@@ -70,7 +72,18 @@ body {
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 39px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Border color for contrast */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #eeeeee; /* Default text color */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow for better separation */
+}
+
+/* Optional: Add a transition for smoother color changes */
+h3 {
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .new-game-section {
@@ -96,6 +109,7 @@ h3 {
     background-color: #f94f6c;
     color: #fff;
 }
+
 
 /* Media Queries for responsiveness */
 
